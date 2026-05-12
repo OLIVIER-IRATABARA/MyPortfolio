@@ -613,7 +613,7 @@ export default function App() {
                     level="H"
                     includeMargin={false}
                     imageSettings={{
-                      src: "./public/icon.png",
+                      src: "/icon.png",
                       x: undefined,
                       y: undefined,
                       height: 32,

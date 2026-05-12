@@ -616,8 +616,8 @@ export default function App() {
                       src: "./public/icon.png",
                       x: undefined,
                       y: undefined,
-                      height: 32,
-                      width: 32,
+                      height: 3,
+                      width: 3,
                       excavate: true,
                     }}
                   />

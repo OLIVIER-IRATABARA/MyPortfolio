@@ -589,14 +589,14 @@ export default function App() {
                 </a>
               </div>
 
-              {/* ── WhatsApp QR Code Card ── */}
+              {/* ── Portfolio QR Code Card ── */}
               <a
-                href={WA_LINK}
+                href="https://olivier-myportfolio.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 className="qr-card mt-8 inline-flex flex-col items-center gap-3 p-5 rounded-2xl border border-white/[0.07] bg-white/[0.02]"
               >
-                <span className="display tag text-white/50">Scan to chat on WhatsApp</span>
+                <span className="display tag text-white/50">Scan to visit my portfolio</span>
                 <div
                   style={{
                     background: '#ffffff',
@@ -606,16 +606,24 @@ export default function App() {
                   }}
                 >
                   <QRCodeSVG
-                    value={WA_LINK}
+                    value="https://olivier-myportfolio.vercel.app/"
                     size={148}
                     bgColor="#ffffff"
                     fgColor="#09090b"
                     level="H"
                     includeMargin={false}
+                    imageSettings={{
+                      src: "./public/icon.png",
+                      x: undefined,
+                      y: undefined,
+                      height: 32,
+                      width: 32,
+                      excavate: true,
+                    }}
                   />
                 </div>
                 <span className="text-white/35 text-xs font-light tracking-wide">
-                  wa.me · +250 798 733 472
+                  olivier-myportfolio.vercel.app
                 </span>
               </a>
             </div>
